@@ -60,6 +60,7 @@ var (
 	logLevel    = flag.String("loglevel", "", "loglevel for v2ray: debug, info, warning (default), error, none.")
 	version     = flag.Bool("version", false, "Show current version of v2ray-plugin")
 	fwmark      = flag.Int("fwmark", 0, "Set SO_MARK option for outbound sockets.")
+	allowInsecure      = flag.Int("allowInsecure", 0, "Set SO_MARK option for outbound sockets.")
 )
 
 func homeDir() string {
@@ -177,6 +178,9 @@ func generateConfig() (*core.Config, error) {
 	}
 	if *tlsEnabled {
 		tlsConfig := tls.Config{ServerName: *host}
+		if *allowInsecure {
+			tlsConfig.AllowInsecure = true
+		}
 		if *server {
 			certificate := tls.Certificate{}
 			if *cert == "" && *certRaw == "" {
