@@ -34,6 +34,7 @@ import (
 	"github.com/v2fly/v2ray-core/v5/transport/internet/quic"
 	"github.com/v2fly/v2ray-core/v5/transport/internet/tls"
 	"github.com/v2fly/v2ray-core/v5/transport/internet/websocket"
+	"github.com/teddysun/v2ray-plugin/cmd/build"
 )
 
 var (
@@ -382,9 +383,23 @@ func printCoreVersion() {
 }
 
 func printVersion() {
+	osVersion, osKernel := build.GetOSVersion()
+	if osVersion == "" {
+		osVersion = "unknown"
+	}
+	if osKernel == "" {
+		osKernel = "unknown"
+	}
+
+	arch := build.GetArch()
+
 	fmt.Println("v2ray-plugin", VERSION)
-	fmt.Println("Go version", runtime.Version())
 	fmt.Println("Yet another SIP003 plugin for shadowsocks")
+	fmt.Printf("- os/version: %s\n", osVersion)
+	fmt.Printf("- os/kernel: %s\n", osKernel)
+	fmt.Printf("- os/type: %s\n", runtime.GOOS)
+	fmt.Printf("- os/arch: %s\n", arch)
+	fmt.Printf("- go/version: %s\n", runtime.Version())	
 }
 
 func main() {
