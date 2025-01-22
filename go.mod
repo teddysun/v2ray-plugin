@@ -6,8 +6,8 @@ toolchain go1.22.7
 
 require (
 	github.com/golang/protobuf v1.5.4
-	github.com/v2fly/v2ray-core/v5 v5.24.0
-	google.golang.org/protobuf v1.35.2
+	github.com/v2fly/v2ray-core/v5 v5.25.0
+	google.golang.org/protobuf v1.36.3
 )
 
 require (
@@ -20,18 +20,14 @@ require (
 	github.com/pires/go-proxyproto v0.8.0 // indirect
 	github.com/quic-go/quic-go v0.48.2 // indirect
 	go.uber.org/mock v0.4.0 // indirect
-	golang.org/x/crypto v0.30.0 // indirect
+	golang.org/x/crypto v0.32.0 // indirect
 	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
 	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.32.0 // indirect
+	golang.org/x/net v0.34.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
-	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/sys v0.29.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/tools v0.22.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240903143218-8af14fe29dc1 // indirect
-	google.golang.org/grpc v1.68.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20241015192408-796eee8c2d53 // indirect
+	google.golang.org/grpc v1.69.4 // indirect
 )
-
-replace github.com/lunixbochs/struc v0.0.0-20200707160740-784aaebc1d40 => github.com/xiaokangwang/struc v0.0.0-20231031203518-0e381172f248
-
-replace github.com/apernet/hysteria/core/v2 v2.4.5 => github.com/JimmyHuang454/hysteria/core/v2 v2.0.0-20240724161647-b3347cf6334d
