@@ -6,8 +6,8 @@ toolchain go1.22.7
 
 require (
 	github.com/golang/protobuf v1.5.4
-	github.com/v2fly/v2ray-core/v5 v5.26.0
-	google.golang.org/protobuf v1.36.4
+	github.com/v2fly/v2ray-core/v5 v5.29.1
+	google.golang.org/protobuf v1.36.5
 )
 
 require (
@@ -20,13 +20,13 @@ require (
 	github.com/pires/go-proxyproto v0.8.0 // indirect
 	github.com/quic-go/quic-go v0.49.0 // indirect
 	go.uber.org/mock v0.5.0 // indirect
-	golang.org/x/crypto v0.32.0 // indirect
+	golang.org/x/crypto v0.33.0 // indirect
 	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
 	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.34.0 // indirect
-	golang.org/x/sync v0.10.0 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/net v0.35.0 // indirect
+	golang.org/x/sync v0.11.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.22.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241202173237-19429a94021a // indirect
 	google.golang.org/grpc v1.70.0 // indirect
