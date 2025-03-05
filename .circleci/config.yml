@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       # 修改这里，添加参数以自动接受变更
-      - run: sudo apt-get update -o Acquire::Check-Valid-Until=false && sudo apt-get install -y upx
+      - run: sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y upx
       - restore_cache:
           key: go-pkg-{{ checksum "go.sum" }}
       - run: ./build-release.sh
