@@ -6,7 +6,8 @@ jobs:
     working_directory: ~/code
     steps:
       - checkout
-      - run: sudo apt-get update && sudo apt-get install -y upx
+      # 修改这里，添加参数以自动接受变更
+      - run: sudo apt-get update -o Acquire::Check-Valid-Until=false && sudo apt-get install -y upx
       - restore_cache:
           key: go-pkg-{{ checksum "go.sum" }}
       - run: ./build-release.sh
