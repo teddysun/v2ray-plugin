@@ -1,12 +1,12 @@
 module github.com/shadowsocks/v2ray-plugin
 
-go 1.22
+go 1.23
 
-toolchain go1.22.7
+toolchain go1.23.7
 
 require (
 	github.com/golang/protobuf v1.5.4
-	github.com/v2fly/v2ray-core/v5 v5.29.2
+	github.com/v2fly/v2ray-core/v5 v5.29.3
 	google.golang.org/protobuf v1.36.5
 )
 

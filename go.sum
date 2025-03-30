@@ -117,8 +117,8 @@ github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e h1:5QefA066A1tF
 github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e/go.mod h1:5t19P9LBIrNamL6AcMQOncg/r10y3Pc01AbHeMhwlpU=
 github.com/v2fly/struc v0.0.0-20241227015403-8e8fa1badfd6 h1:Qea2jW7g1hvQ9TkYq3aT2h0NDWjPQHtvDfmKXoWgJ9E=
 github.com/v2fly/struc v0.0.0-20241227015403-8e8fa1badfd6/go.mod h1:a/FYYQz8bW7wh2jmI+DVsbVYwLkgmgpml+GrJwV+eIo=
-github.com/v2fly/v2ray-core/v5 v5.29.2 h1:WaHTMcbYFlst9l7OoO4Aop+A7ylSxEIaeEG9fNbZPG0=
-github.com/v2fly/v2ray-core/v5 v5.29.2/go.mod h1:l9jE4S4y0YHaQPxkl0NXahTdar7TkM95hDSfIvIQcMQ=
+github.com/v2fly/v2ray-core/v5 v5.29.3 h1:jsv1sFV80C6nVVH2aspKDsMtU/DlVQfA3N/lT1NbmFg=
+github.com/v2fly/v2ray-core/v5 v5.29.3/go.mod h1:l9jE4S4y0YHaQPxkl0NXahTdar7TkM95hDSfIvIQcMQ=
 github.com/vincent-petithory/dataurl v1.0.0 h1:cXw+kPto8NLuJtlMsI152irrVw9fRDX8AbShPRpg2CI=
 github.com/vincent-petithory/dataurl v1.0.0/go.mod h1:FHafX5vmDzyP+1CQATJn7WFKc9CvnvxyvZy6I1MrG/U=
 github.com/xiaokangwang/VLite v0.0.0-20220418190619-cff95160a432 h1:I/ATawgO2RerCq9ACwL0wBB8xNXZdE3J+93MCEHReRs=
