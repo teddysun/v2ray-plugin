@@ -1,0 +1,27 @@
+{
+    "FixedFileInfo": {
+        "FileVersion": {
+            "Major": %MAJOR%,
+            "Minor": %MINOR%,
+            "Patch": %PATCH%,
+            "Build": %BUILD%
+        },
+        "ProductVersion": {
+            "Major": %MAJOR%,
+            "Minor": %MINOR%,
+            "Patch": %PATCH%,
+            "Build": %BUILD%
+        }
+    },
+    "StringFileInfo": {
+        "CompanyName": "Teddysun",
+        "FileDescription": "A SIP003 plugin based on v2ray",
+        "FileVersion": "%VERSION%",
+        "InternalName": "v2ray-plugin",
+        "LegalCopyright": "Copyright (c) 2020 - 2026",
+        "OriginalFilename": "v2ray-plugin.exe",
+        "ProductName": "v2ray-plugin",
+        "ProductVersion": "%VERSION%"
+    },
+    "IconPath": "assets/v2ray.ico"
+}
