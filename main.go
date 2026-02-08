@@ -402,7 +402,7 @@ func printVersion() {
 	fmt.Printf("- os/kernel: %s\n", osKernel)
 	fmt.Printf("- os/type: %s\n", runtime.GOOS)
 	fmt.Printf("- os/arch: %s\n", arch)
-	fmt.Printf("- go/version: %s\n", runtime.Version())	
+	fmt.Printf("- go/version: %s\n", runtime.Version())
 }
 
 func main() {
