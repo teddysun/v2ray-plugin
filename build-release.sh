@@ -49,7 +49,7 @@ if hash goversioninfo 2>/dev/null; then
         -e "s/%VERSION%/$VERSION_CLEAN/g" \
         versioninfo.json > versioninfo_generated.json
     # Generate platform-specific .syso files for all Windows architectures
-    # This creates resource_i386.syso, resource_amd64.syso, resource_arm.syso, resource_arm64.syso
+    # This creates resource_windows_386.syso, resource_windows_amd64.syso, resource_windows_arm.syso, resource_windows_arm64.syso
     goversioninfo -platform-specific versioninfo_generated.json
 fi
 
