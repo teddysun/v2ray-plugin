@@ -97,12 +97,6 @@ $upx v2ray-plugin_darwin_arm64 >/dev/null
 tar -zcf bin/v2ray-plugin-darwin-arm64-${VERSION}.tar.gz v2ray-plugin_darwin_arm64
 $sum bin/v2ray-plugin-darwin-arm64-${VERSION}.tar.gz
 
-# Windows ARM
-env CGO_ENABLED=0 GOOS=windows GOARCH=arm go build -v -trimpath -ldflags "${LDFLAGS}" -o v2ray-plugin_windows_arm.exe
-$upx v2ray-plugin_windows_arm.exe >/dev/null
-tar -zcf bin/v2ray-plugin-windows-arm-${VERSION}.tar.gz v2ray-plugin_windows_arm.exe
-$sum bin/v2ray-plugin-windows-arm-${VERSION}.tar.gz
-
 # Windows ARM64
 env CGO_ENABLED=0 GOOS=windows GOARCH=arm64 go build -v -trimpath -ldflags "${LDFLAGS}" -o v2ray-plugin_windows_arm64.exe
 $upx v2ray-plugin_windows_arm64.exe >/dev/null
