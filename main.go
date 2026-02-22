@@ -21,6 +21,7 @@ import (
 	vlog "github.com/v2fly/v2ray-core/v5/app/log"
 	clog "github.com/v2fly/v2ray-core/v5/common/log"
 
+	"github.com/teddysun/v2ray-plugin/cmd/build"
 	"github.com/v2fly/v2ray-core/v5/app/dispatcher"
 	"github.com/v2fly/v2ray-core/v5/app/proxyman"
 	"github.com/v2fly/v2ray-core/v5/common/net"
@@ -34,7 +35,6 @@ import (
 	"github.com/v2fly/v2ray-core/v5/transport/internet/quic"
 	"github.com/v2fly/v2ray-core/v5/transport/internet/tls"
 	"github.com/v2fly/v2ray-core/v5/transport/internet/websocket"
-	"github.com/teddysun/v2ray-plugin/cmd/build"
 )
 
 var (
@@ -437,7 +437,7 @@ func main() {
 
 	{
 		osSignals := make(chan os.Signal, 1)
-		signal.Notify(osSignals, os.Interrupt, os.Kill, syscall.SIGTERM)
+		signal.Notify(osSignals, os.Interrupt, syscall.SIGTERM)
 		<-osSignals
 	}
 }
