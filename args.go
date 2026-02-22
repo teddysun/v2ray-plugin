@@ -4,8 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"os"
-	"sort"
-	"strings"
 )
 
 // Key–value mappings for the representation of client and server options.
@@ -145,46 +143,4 @@ func parsePluginOptions(s string) (opts Args, err error) {
 		i++
 	}
 	return opts, nil
-}
-
-// Escape backslashes and all the bytes that are in set.
-func backslashEscape(s string, set []byte) string {
-	var buf bytes.Buffer
-	for _, b := range []byte(s) {
-		if b == '\\' || bytes.IndexByte(set, b) != -1 {
-			buf.WriteByte('\\')
-		}
-		buf.WriteByte(b)
-	}
-	return buf.String()
-}
-
-// Encode a name–value mapping so that it is suitable to go in the ARGS option
-// of an SMETHOD line. The output is sorted by key. The "ARGS:" prefix is not
-// added.
-//
-// "Equal signs and commas [and backslashes] must be escaped with a backslash."
-func encodeSmethodArgs(args Args) string {
-	if args == nil {
-		return ""
-	}
-
-	keys := make([]string, 0, len(args))
-	for key := range args {
-		keys = append(keys, key)
-	}
-	sort.Strings(keys)
-
-	escape := func(s string) string {
-		return backslashEscape(s, []byte{'=', ','})
-	}
-
-	var pairs []string
-	for _, key := range keys {
-		for _, value := range args[key] {
-			pairs = append(pairs, escape(key)+"="+escape(value))
-		}
-	}
-
-	return strings.Join(pairs, ",")
 }
