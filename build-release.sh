@@ -54,7 +54,7 @@ fi
 
 OSES=(linux darwin windows freebsd)
 ARCHS=(amd64 386)
-LDFLAGS="-X main.VERSION=${VERSION_BASE} -s -w -buildid="
+LDFLAGS="-X main.VERSION=v${VERSION_BASE} -s -w -buildid="
 
 mkdir bin
 
